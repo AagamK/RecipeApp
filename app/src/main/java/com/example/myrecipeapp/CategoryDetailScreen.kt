@@ -34,7 +34,8 @@ fun CategoryDetailsScreen(category: Category){
 
         Text(text = category.strCategoryDescription,
             textAlign = TextAlign.Justify,
-            modifier = Modifier.verticalScroll(rememberScrollState()).padding(6.dp, 16.dp),
+            modifier = Modifier.verticalScroll(rememberScrollState())
+
         )
     }
 }

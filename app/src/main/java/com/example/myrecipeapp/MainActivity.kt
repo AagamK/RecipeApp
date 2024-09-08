@@ -24,13 +24,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             val navController = rememberNavController()
             MyRecipeAppTheme {
-//                Surface(
-//                    modifier = Modifier.fillMaxSize(),
-//                    color = MaterialTheme.colorScheme.background
-//                ) {
-//                    RecipeApp(navController = navController)
-//                }
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
                     RecipeApp(navController = navController)
                 }
             }
